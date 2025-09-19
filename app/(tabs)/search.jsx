@@ -30,7 +30,7 @@ export default function Search({ place = "Karnataka, India", onProfilePress, onN
   };
 
   // Set up Google API Key
-  const GOOGLE_API_KEY = "AIzaSyCJ88as5q5KXF9YOhqfICUzPOGaohIDIjI"; // Replace this with your actual Google API key
+  const GOOGLE_API_KEY = process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY; // Replace this with your actual Google API key
 
   useEffect(() => {
     (async () => {
